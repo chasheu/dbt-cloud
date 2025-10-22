@@ -43,5 +43,8 @@ models:
       snowflake_warehouse: dbt_wh
     silver:
       +materialized: table
-      snowflake_warehouse: dbt_wh  
+      snowflake_warehouse: dbt_wh
+    gold:
+      +materialized: table
+      snowflake_warehouse: dbt_wh    
     

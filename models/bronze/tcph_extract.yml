@@ -18,4 +18,12 @@ sources:
               - relationships:
                   to: source('tpch','orders')
                   field: o_orderkey
-          
+      - name: customer
+        columns:
+          - name: c_custkey
+            tests:
+              - unique
+              - not_null
+              - relationships:
+                  to: source('tpch','orders')
+                  field: o_custkey
